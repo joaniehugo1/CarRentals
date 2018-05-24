@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 use yii\db\Migration;
 
@@ -14,6 +14,12 @@ class m180523_022758_create_car_table extends Migration
     {
         $this->createTable('car', [
             'id' => $this->primaryKey(),
+            'name'=> $this->string(100)->notNull(),
+            'model' => $this->string(255),
+            'type'=>$this->string()->notNull(),
+            'color' =>$this->string()->notNull(),
+            'ppd' =>$this->money(),
+
         ]);
     }
 
