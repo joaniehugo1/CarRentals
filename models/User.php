@@ -25,9 +25,7 @@ class User extends \yii\base\BaseObject implements \yii\web\IdentityInterface
         ],
         '101' => [
             'id' => '101',
-            'username' => 'editor
-            
-            ',
+            'username' => 'editor',
             'password' => 'editor',
             'authKey' => 'test101key',
             'role' => 200,
